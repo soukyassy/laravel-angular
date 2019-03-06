@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Signup form</title>
+    <style>
+        .form_wrapper {
+            background : #fff ;
+            bordure : 1px solide #ddd ;
+            marge : 0 auto;
+            largeur : 350px ;
+            taille de police : 16px ;
+            -moz-box-shadow : 1px  1px  7px  #ccc ;
+            -webkit-box-shadow : 1px  1px  7px  #ccc ;
+            box-shadow : 1px  1px  7px  #ccc ;
+        }
+        .form_wrapper  h3 {
+            padding : 20px  30px  20px  30px ;
+            couleur de fond : # 444 ;
+            couleur : #fff ;
+            taille de police : 25px ;
+            border-bottom : 1px solid #ddd ;
+            background-image: repeating-linear-gradient(to bottom,
+            rgb(26,198,204),
+            rgb(26,198,204) 7%,
+            rgb(100,100,100) 10%);
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="form_wrapper" class="form_wrapper">
+<form (ngSubmit)="onSubmit(fm)" #fm="ngForm">
+    <h3>Connexion</h3>
+<div class="form-group">
+
+
+    <label for="name">User name</label>
+    <input type="text" class="form-control" ngModel name="name" id="user">
+    </div>
+
+    <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" ngModel name="email" id="email">
+    </div>
+    <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" ngModel name="password" id="pass">
+    </div>
+    <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" ngModel name="phone" id="phone">
+</div>
+    <button type="submit" >Add</button>
+
+</form>
+
+</div>
+</body>
+</html>
